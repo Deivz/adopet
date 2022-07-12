@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins&display=swap');
+
+:root {
+  --azul: #3772FF;
+  --branco: #FFFFFF;
+  --cinza: #737380;
+  --cinza-claro: #F6F6F6;
+  --creme: #FCF0E3;
+  --verde: #36D6AD;
+  --vermelho: #FC7071;
+  --fonte-principal: 'Poppins', sans-serif;
+  --fonte-secundaria: 'IBM Plex Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg__azul {
+  background-color: var(--azul);
+  background-image: url('./assets/images/vetor_topo.svg'), url('./assets/images/linha_superior.svg'), url('./assets/images/vetor_lateral.svg');
+  background-position: top left, top left, center right;
+  background-repeat: no-repeat;
+  color: var(--branco);
+  font-family: var(--fonte-principal);
+}
+
+.bg__branco{
+  background-color: var(--branco);
+  background-image: url('./assets/images/vetor_topo.svg'), url('./assets/images/linha_superior.svg'), url('./assets/images/vetor_esquerdo.svg');
+  background-position: top left, top left, 0 36vh;
+  background-repeat: no-repeat;
+  color: var(--azul);
+  font-family: var(--fonte-principal);
+}
+
+#root > main.conteudo{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root > main.conteudo > div.container{
+  flex-grow: 1;
+}
+
+@media (min-width: 768px){
+  .bg__azul {
+    background-size: 530px 435px, 560px 469px, 135px 664px;
+  }
+
+  .bg__branco {
+    background-size: 530px 435px, 560px 469px, 135px 664px;
+  }
 }

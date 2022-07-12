@@ -1,0 +1,66 @@
+.cadastro__conteudo {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+}
+
+.cadastro__conteudo--titulo {
+    color: var(--azul);
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.cadastro__conteudo--texto {
+    color: var(--azul);
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0 auto;
+    padding: .5rem 0;
+    text-align: center;
+    width: 80%;
+}
+
+.formulario {
+    color: var(--cinza);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+/* .corpo {
+    background-color: var(--branco);
+    background-image: url('../../images/pata_um.svg'),
+        url('../../images/pata_dois.svg'),
+        url('../../images/pata_tres.svg'),
+        url('../../images/vetor_topo.svg'),
+        url('../../images/linha_superior.svg'),
+        url('../../images/vetor_esquerdo.svg');
+    background-position: right top, right 6vh, 36vh top, left top, left top, left 50vh;
+    background-repeat: no-repeat;
+    color: var(--cinza);
+    font-family: var(--fonte-principal);
+    min-height: 100vh;
+}
+
+
+
+@media (min-height: 800px) {
+    body {
+        background-position: right top, right 5vh, 31vh top, left top, left top, left 40vh;
+    }
+}
+
+@media (min-width:400px) and (orientation: landscape) {
+    body {
+        background-position: right top, right 6vw, 80vw top, left top, left top, left 90vh;
+    }
+}
+
+@media (min-width:800px) and (orientation: landscape) {
+    body {
+        background-position: right top, right 5vw, 85vw top, left top, left top, left 78vh;
+    }
+} */

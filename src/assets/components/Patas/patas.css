@@ -1,0 +1,25 @@
+.patas{
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.pata__um{
+    height: 20vh;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: auto;
+}
+
+.pata__dois{
+    right: 0;
+    position: absolute;
+    top: 3rem;
+}
+
+.pata__tres{
+    right: 3rem;
+    position: absolute;
+    top: 0;
+}
