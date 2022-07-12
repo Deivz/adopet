@@ -6,7 +6,7 @@ import Home from './assets/pages/Home/index.jsx';
 export default function AppRouter() {
    return (
       <main className='conteudo'>
-         <Router>
+         <Router basename='/adopet'>
             <Routes>
                <Route path='/' element={<PaginaPadrao />}>
                   <Route index element={<Home />} />
