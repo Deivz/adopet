@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 export default function PaginaPadrao() {
 
    (function mudarCorDeFundo(){
-      if (window.location.pathname === '/'){
+      if (window.location.pathname === '/adopet/' || window.location.pathname === '/'){
          document.getElementById('root').classList.remove('bg__branco');
          document.getElementById('root').classList.add('bg__azul');
       }else{
@@ -26,7 +26,7 @@ export default function PaginaPadrao() {
             <Link to="/">
                <img src={home} alt="Página inicial" className="cabecalho__icones" />
             </Link>
-            <Link to="/mensagens">
+            <Link to="mensagens">
                <img src={mensagens} alt="Caixa de mensagens" className="cabecalho__icones" />
             </Link>
          </header>
