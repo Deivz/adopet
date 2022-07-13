@@ -1,15 +1,13 @@
 .patas{
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
 }
 
 .pata__um{
-    height: 20vh;
     right: 0;
     position: absolute;
     top: 0;
-    width: auto;
 }
 
 .pata__dois{

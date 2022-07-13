@@ -1,7 +1,7 @@
-.cadastro__conteudo {
-    margin: 0 auto;
+.secao__cadastro {
+    min-height: 64vh;
     text-align: center;
-    width: 90%;
+    width: 100%;
 }
 
 .cadastro__conteudo--titulo {
@@ -24,28 +24,34 @@
 
 .formulario {
     color: var(--cinza);
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     padding-top: 1rem;
 }
 
-/* .corpo {
-    background-color: var(--branco);
-    background-image: url('../../images/pata_um.svg'),
-        url('../../images/pata_dois.svg'),
-        url('../../images/pata_tres.svg'),
-        url('../../images/vetor_topo.svg'),
-        url('../../images/linha_superior.svg'),
-        url('../../images/vetor_esquerdo.svg');
-    background-position: right top, right 6vh, 36vh top, left top, left top, left 50vh;
-    background-repeat: no-repeat;
-    color: var(--cinza);
-    font-family: var(--fonte-principal);
-    min-height: 100vh;
+.cadastro__figura--direita {
+    display: hidden;
 }
 
+.cadastro__figura--esquerda {
+    background-image: url('../../images/vetor_esquerdo.svg');
+    background-position: 0 16vh;
+    background-repeat: no-repeat;
+}
 
+@media (min-width: 768px){
+    .cadastro__figura--direita {
+        background-image: url('../../images/vetor_lateral.svg');
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: auto 664px;
+    }
+
+    .cadastro__figura--esquerda {
+        display: hidden;
+    }
+}
+
+/* 
 
 @media (min-height: 800px) {
     body {

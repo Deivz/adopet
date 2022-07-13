@@ -19,22 +19,20 @@
   padding: 0;
 }
 
-.bg__azul {
-  background-color: var(--azul);
-  background-image: url('./assets/images/vetor_topo.svg'), url('./assets/images/linha_superior.svg'), url('./assets/images/vetor_lateral.svg');
-  background-position: top left, top left, center right;
+.bg__padrao {
+  background-image: url('./assets/images/vetor_topo.svg'), url('./assets/images/linha_superior.svg');
+  background-position: top left, top left;
   background-repeat: no-repeat;
   color: var(--branco);
   font-family: var(--fonte-principal);
 }
 
-.bg__branco{
+.bg__azul {
+  background-color: var(--azul);
+}
+
+.bg__branco {
   background-color: var(--branco);
-  background-image: url('./assets/images/vetor_topo.svg'), url('./assets/images/linha_superior.svg'), url('./assets/images/vetor_esquerdo.svg');
-  background-position: top left, top left, 0 36vh;
-  background-repeat: no-repeat;
-  color: var(--azul);
-  font-family: var(--fonte-principal);
 }
 
 #root > main.conteudo{

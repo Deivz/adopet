@@ -1,3 +1,7 @@
+.secao__conteudo{
+    width: 100%;
+}
+
 .home__conteudo {
     margin: 0 auto;
     text-align: center;
@@ -33,6 +37,12 @@
     position: relative;
     top: 1.2rem;
     width: 247px;
+}
+
+.figura__lateral--direita {
+    background-image: url('../../images/vetor_lateral.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
 }
 
 @media (orientation: landscape){

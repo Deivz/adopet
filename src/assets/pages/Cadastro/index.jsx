@@ -8,7 +8,7 @@ export default function Cadastro() {
    return (
       <>
          <Patas />
-         <section className="cadastro__conteudo">
+         <section className="secao__cadastro cadastro__figura--direita cadastro__figura--esquerda">
             <img src={logo} alt="Logomarca da Adopet" className="logo" />
             <p className="cadastro__conteudo--titulo">Ainda não tem cadastro?</p>
             <p className="cadastro__conteudo--texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>

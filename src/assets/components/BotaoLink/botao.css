@@ -13,17 +13,43 @@
     line-height: 24px;
     margin: 0 auto 1rem auto;
     text-decoration: none;
+    width: 148px;
+}
+
+.botaoLink {
+    align-items: center;
+    background-color: var(--vermelho);
+    border: solid 1px var(--vermelho);
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: var(--branco);
+    display: flex;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    height: 40px;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0 auto 1rem auto;
+    text-decoration: none;
     width: 200px;
 }
 
 @media (min-width: 768px){
     .botao {
+        width: 164px;
+    }
+
+    .botaoLink {
         width: 344px;
     }
 }
 
 @media (min-width: 1440px){
     .botao {
+        width: 174px;
+    }
+
+    .botaoLink {
         width: 362px;
     }
 }
