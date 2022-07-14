@@ -1,23 +1,24 @@
 .patas{
+    background-image: url('../../images/Patas.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 165px;
     position: absolute;
     right: 0;
     top: 0;
+    width: 165px;
 }
 
-.pata__um{
-    right: 0;
-    position: absolute;
-    top: 0;
+@media (min-width: 768px){
+    .patas{
+        height: 220px;
+        width: 220px;
+    }
 }
 
-.pata__dois{
-    right: 0;
-    position: absolute;
-    top: 3rem;
-}
-
-.pata__tres{
-    right: 3rem;
-    position: absolute;
-    top: 0;
+@media (min-width: 1440px){
+    .patas{
+        height: 240px;
+        width: 240px;
+    }
 }

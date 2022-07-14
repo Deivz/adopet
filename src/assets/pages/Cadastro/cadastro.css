@@ -1,12 +1,9 @@
 .secao__cadastro {
-    min-height: 64vh;
     text-align: center;
-    width: 100%;
 }
 
 .cadastro__conteudo--titulo {
     color: var(--azul);
-    font-size: 16px;
     line-height: 21px;
     padding-top: 1.5rem;
     text-align: center;
@@ -14,59 +11,27 @@
 
 .cadastro__conteudo--texto {
     color: var(--azul);
-    font-size: 16px;
     line-height: 21px;
     margin: 0 auto;
     padding: .5rem 0;
-    text-align: center;
-    width: 80%;
+    width: 312px;
 }
 
 .formulario {
     color: var(--cinza);
-    justify-content: center;
     padding-top: 1rem;
 }
 
-.cadastro__figura--direita {
-    display: hidden;
+.botao__desktop{
+    display: none;
 }
 
-.cadastro__figura--esquerda {
-    background-image: url('../../images/vetor_esquerdo.svg');
-    background-position: 0 16vh;
-    background-repeat: no-repeat;
-}
-
-@media (min-width: 768px){
-    .cadastro__figura--direita {
-        background-image: url('../../images/vetor_lateral.svg');
-        background-position: top right;
-        background-repeat: no-repeat;
-        background-size: auto 664px;
+@media (min-width: 1440px){
+    .botao__desktop{
+        display: block;
     }
 
-    .cadastro__figura--esquerda {
-        display: hidden;
+    .botao__mobile{
+        display: none;
     }
 }
-
-/* 
-
-@media (min-height: 800px) {
-    body {
-        background-position: right top, right 5vh, 31vh top, left top, left top, left 40vh;
-    }
-}
-
-@media (min-width:400px) and (orientation: landscape) {
-    body {
-        background-position: right top, right 6vw, 80vw top, left top, left top, left 90vh;
-    }
-}
-
-@media (min-width:800px) and (orientation: landscape) {
-    body {
-        background-position: right top, right 5vw, 85vw top, left top, left top, left 78vh;
-    }
-} */

@@ -1,3 +1,9 @@
+.container__home{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .secao__conteudo{
     width: 100%;
 }
@@ -17,7 +23,7 @@
     font-family: var(--fonte-secundaria);
     font-size: 26px;
     line-height: 48px;
-    padding: 1rem 0;
+    padding-top: 1rem;
 }
 
 .home__texto--mobile {
@@ -31,24 +37,17 @@
     display: none;
 }
 
+.container__ilustracao{
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    width: 88vw;
+}
+
 .ilustracao {
-    height: auto;
-    margin: 0 14vw;
+    height: 313px;
     position: relative;
     top: 1.2rem;
-    width: 247px;
-}
-
-.figura__lateral--direita {
-    background-image: url('../../images/vetor_lateral.svg');
-    background-position: top right;
-    background-repeat: no-repeat;
-}
-
-@media (orientation: landscape){
-    .ilustracao {
-        margin: 0 auto;
-    }
 }
 
 @media (min-width: 768px) {
@@ -72,21 +71,14 @@
         padding: 1rem 0;
     }
 
+    .container__ilustracao{
+        width: 95vw;
+    }
+    
     .ilustracao {
         height: 422px;
-        margin: 0 27vw;
-        width: 338px;
     }
 }
-
-@media (min-width: 768px) and (orientation: landscape) {
-    .ilustracao {
-        height: 422px;
-        margin: 0 auto;
-        width: 338px;
-    }
-}
-
 
 @media (min-width: 1440px){
     .logo {
@@ -97,9 +89,11 @@
         width: 488px;
     }
 
+    .container__ilustracao{
+        width: 97vw;
+    }
+    
     .ilustracao {
         height: 432px;
-        margin: 0 auto;
-        width: 346px;
     }
 }

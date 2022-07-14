@@ -1,10 +1,17 @@
-.label {
-    display: block;
-    margin-bottom: .5rem;
-    width: 100%;
+.container__senha{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.input {
+/* .icone__olho{
+    height: 40px;
+    margin-right: 20px;
+    position: absolute;
+} */
+
+.campo__senha {
     background: var(--cinza-claro);
     border: none;
     border-radius: 6px;
@@ -15,26 +22,26 @@
     width: 312px;
 }
 
-.input::placeholder {
+.campo__senha::placeholder {
     font-size: 12px;
 }
 
 @media (min-width: 768px){
-    .input {
+    .campo__senha {
         width: 344px;
     }
     
-    .input::placeholder {
+    .campo__senha::placeholder {
         font-size: 14px;
     }
 }
 
 @media (min-width: 1440px){
-    .input {
+    .campo__senha {
         width: 552px;
     }
     
-    .input::placeholder {
+    .campo__senha::placeholder {
         font-size: 16px;
     }
 }

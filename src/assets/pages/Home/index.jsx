@@ -5,7 +5,7 @@ import BotaoLink from '../../components/BotaoLink';
 
 export default function Home() {
    return (
-      <section className="secao__conteudo figura__lateral--direita">
+      <section className="secao__conteudo">
          <div className='home__conteudo'>
             <img src={logo} alt="Logomarca da Adopet" className="logo" />
             <h2 className="home__titulo">Boas-vindas!</h2>
@@ -14,7 +14,9 @@ export default function Home() {
             <BotaoLink rota={'login'} texto={'Já tenho conta'} />
             <BotaoLink rota={'cadastro'} texto={'Quero me cadastrar'} />
          </div>
-         <img src={ilustracao} alt="Desenho de um cão e um gato" className="ilustracao" />
+         <div className='container__ilustracao'>
+            <img src={ilustracao} alt="Desenho de um cão e um gato" className="ilustracao" />
+         </div>
       </section>
    );
 }

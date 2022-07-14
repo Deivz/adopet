@@ -19,30 +19,23 @@
   padding: 0;
 }
 
-.bg__padrao {
-  background-image: url('./assets/images/vetor_topo.svg'), url('./assets/images/linha_superior.svg');
-  background-position: top left, top left;
+#root > main.conteudo{
+  background-image: url('./assets/images/vetor_topo.svg'), url('./assets/images/linha_superior.svg'), url('./assets/images/vetor_lateral.svg');
+  background-position: top left, top left, center right;
   background-repeat: no-repeat;
   color: var(--branco);
-  font-family: var(--fonte-principal);
-}
-
-.bg__azul {
-  background-color: var(--azul);
-}
-
-.bg__branco {
-  background-color: var(--branco);
-}
-
-#root > main.conteudo{
   display: flex;
+  font-family: var(--fonte-principal);
   flex-direction: column;
   min-height: 100vh;
 }
 
-#root > main.conteudo > div.container{
-  flex-grow: 1;
+.fundo__azul{
+  background-color: var(--azul);
+}
+
+.fundo__branco{
+  background-color: var(--branco);
 }
 
 @media (min-width: 768px){

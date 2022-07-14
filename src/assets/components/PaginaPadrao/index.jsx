@@ -7,13 +7,14 @@ import {Link} from 'react-router-dom';
 
 export default function PaginaPadrao() {
 
+   const {pathname} = useLocation();
    (function mudarCorDeFundo(){
-      if (window.location.pathname === '/adopet' || window.location.pathname === '/adopet/'){
-         document.getElementById('root').classList.remove('bg__branco');
-         document.getElementById('root').classList.add('bg__azul');
+      if(pathname === '/'){
+         document.getElementById('root').classList.add('fundo__azul');
+         document.getElementById('root').classList.remove('fundo__branco');
       }else{
-         document.getElementById('root').classList.remove('bg__azul');
-         document.getElementById('root').classList.add('bg__branco');
+         document.getElementById('root').classList.add('fundo__branco');
+         document.getElementById('root').classList.remove('fundo__azul');
       }
    })();
 
@@ -30,7 +31,7 @@ export default function PaginaPadrao() {
                <img src={mensagens} alt="Caixa de mensagens" className="cabecalho__icones" />
             </Link>
          </header>
-         <div className={useLocation().pathname !== '' ? 'container__padrao' : ''}>
+         <div className={pathname === '/' ? 'container__padrao container__home' : 'container__padrao'}>
             <Outlet />
          </div>
          <footer className='rodape'>

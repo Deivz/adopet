@@ -3,6 +3,7 @@ import logo from '../../images/logo_azul.svg';
 import FormInput from '../../components/FormInput';
 import Botao from '../../components/Botao';
 import Patas from '../../components/Patas';
+import CampoSenha from '../../components/CampoSenha';
 
 export default function Cadastro() {
    return (
@@ -15,9 +16,15 @@ export default function Cadastro() {
             <form className="formulario">
                <FormInput label='Email' type='email' id='email' name='email' placeholder='Escolha seu melhor email' />
                <FormInput label='Nome' type='text' id='nome' name='nome' placeholder='Digite seu nome completo' />
-               <FormInput label='Senha' type='password' id='senha' name='senha' placeholder='Crie uma senha' />
-               <FormInput label='Confirma sua senha' type='password' id='senha__confirma' name='senha__confirma' placeholder='Repita a senha criada acima' />
-               <Botao type='submit' value='Cadastrar' />
+               <CampoSenha label='Senha' id='senha' name='senha' placeholder='Crie uma senha' />
+               {/* <FormInput label='Senha' type='password' id='senha' name='senha' placeholder='Crie uma senha' />
+               <FormInput label='Confirma sua senha' type='password' id='senha__confirma' name='senha__confirma' placeholder='Repita a senha criada acima' /> */}
+               <div className="botao__mobile">
+                  <Botao type='submit' value='Cadastrar' />
+               </div>
+               <div className="botao__desktop">
+                  <Botao type='submit' value='Cadastrar!' />
+               </div>
             </form>
          </section>
       </>
