@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/adopet/static/css/main.73a4b5ac.css",
-    "main.js": "/adopet/static/js/main.52b8cb20.js",
+    "main.css": "/adopet/static/css/main.9b6775ef.css",
+    "main.js": "/adopet/static/js/main.c72fa829.js",
     "static/media/ilustracao1.png": "/adopet/static/media/ilustracao1.858792cc056bcba8dc4c.png",
-    "static/media/pata_dois.svg": "/adopet/static/media/pata_dois.66c3aff129e495a524a5381416fa65d8.svg",
+    "static/media/Patas.png": "/adopet/static/media/Patas.10a6e47bcaf77bfb7a2e.png",
     "static/media/logo_azul.svg": "/adopet/static/media/logo_azul.4a935b26a6f8a4a7b05e49fb0d1127c9.svg",
     "static/media/Logo.svg": "/adopet/static/media/Logo.dab84cddbcb68f62b59845501b8ca609.svg",
     "static/media/logo_branca.svg": "/adopet/static/media/logo_branca.5888ba71c86199404a02b4e88f0973c8.svg",
-    "static/media/pata_tres.svg": "/adopet/static/media/pata_tres.6379f49668e9d7d9c2860a21ed24241f.svg",
-    "static/media/pata_um.svg": "/adopet/static/media/pata_um.b3ba809aa64c419c57f0617ef2e15d2e.svg",
+    "static/media/user.svg": "/adopet/static/media/user.6f88cbe8973e0cd4ffe85b13a89c1b02.svg",
     "index.html": "/adopet/index.html",
     "static/media/Mensagens.svg": "/adopet/static/media/Mensagens.5f7dd28207df71cb5402d68be6dc1b1c.svg",
-    "static/media/vetor_esquerdo.svg": "/adopet/static/media/vetor_esquerdo.a8c05c6266eeac71f02f.svg",
     "static/media/vetor_lateral.svg": "/adopet/static/media/vetor_lateral.6e38640f256cc14dfbe0.svg",
     "static/media/vetor_topo.svg": "/adopet/static/media/vetor_topo.787cecd4b88310eac38d.svg",
     "static/media/linha_superior.svg": "/adopet/static/media/linha_superior.06922a74d4a80576c567.svg",
     "static/media/Casa.svg": "/adopet/static/media/Casa.ee2869b277070865e1bcf08741dae8fe.svg",
-    "main.73a4b5ac.css.map": "/adopet/static/css/main.73a4b5ac.css.map",
-    "main.52b8cb20.js.map": "/adopet/static/js/main.52b8cb20.js.map"
+    "main.9b6775ef.css.map": "/adopet/static/css/main.9b6775ef.css.map",
+    "main.c72fa829.js.map": "/adopet/static/js/main.c72fa829.js.map"
   },
   "entrypoints": [
-    "static/css/main.73a4b5ac.css",
-    "static/js/main.52b8cb20.js"
+    "static/css/main.9b6775ef.css",
+    "static/js/main.c72fa829.js"
   ]
 }
