@@ -37,6 +37,7 @@ section{
 
 .container{
   margin: 0 auto;
+  max-width: 1500px;
   width: 86vw;
 }
 
@@ -52,8 +53,10 @@ section{
   .pagina {
     background-size: 530px 435px, 560px 469px, 135px 664px;
   }
+}
 
+@media (min-width: 1600px){
   .pagina {
-    background-size: 530px 435px, 560px 469px, 135px 664px;
+    background-size: 570px 470px, 590px 495px, 135px 664px;
   }
 }
