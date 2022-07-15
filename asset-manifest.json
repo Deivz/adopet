@@ -1,10 +1,14 @@
 {
   "files": {
-    "main.css": "/adopet/static/css/main.8aecf450.css",
-    "main.js": "/adopet/static/js/main.2c7287f2.js",
+    "main.css": "/adopet/static/css/main.65bacddc.css",
+    "main.js": "/adopet/static/js/main.62a439d3.js",
+    "static/media/yoda.svg": "/adopet/static/media/yoda.c92dfaf155273ddae7bcb2e500d8b0e2.svg",
+    "static/media/lua.svg": "/adopet/static/media/lua.f834dea54ea6547a08c678ed00cdb014.svg",
     "static/media/dunga.svg": "/adopet/static/media/dunga.d7a02dd45a1d2a5dcb36a328be5b5fff.svg",
+    "static/media/zelda.svg": "/adopet/static/media/zelda.faaed08ef833d5881cad3a79647209ee.svg",
     "static/media/felicia.svg": "/adopet/static/media/felicia.aa94c636f5e25148720cf163771c3a51.svg",
     "static/media/sirius.svg": "/adopet/static/media/sirius.679936ade62e188d356230fdabafbae4.svg",
+    "static/media/amora.svg": "/adopet/static/media/amora.09590d60a42d22cece0dc8e1f83225ae.svg",
     "static/media/fiona.svg": "/adopet/static/media/fiona.e1dc480228231dbba84b76c3e317c523.svg",
     "static/media/sid.svg": "/adopet/static/media/sid.a7007e3d22304fa48a48a258b63adcff.svg",
     "static/media/ilustracao1.png": "/adopet/static/media/ilustracao1.858792cc056bcba8dc4c.png",
@@ -20,11 +24,11 @@
     "static/media/vetor_topo.svg": "/adopet/static/media/vetor_topo.787cecd4b88310eac38d.svg",
     "static/media/linha_superior.svg": "/adopet/static/media/linha_superior.06922a74d4a80576c567.svg",
     "static/media/Casa.svg": "/adopet/static/media/Casa.ee2869b277070865e1bcf08741dae8fe.svg",
-    "main.8aecf450.css.map": "/adopet/static/css/main.8aecf450.css.map",
-    "main.2c7287f2.js.map": "/adopet/static/js/main.2c7287f2.js.map"
+    "main.65bacddc.css.map": "/adopet/static/css/main.65bacddc.css.map",
+    "main.62a439d3.js.map": "/adopet/static/js/main.62a439d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.8aecf450.css",
-    "static/js/main.2c7287f2.js"
+    "static/css/main.65bacddc.css",
+    "static/js/main.62a439d3.js"
   ]
 }
