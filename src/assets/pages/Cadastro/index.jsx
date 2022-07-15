@@ -4,6 +4,7 @@ import FormInput from '../../components/FormInput';
 import Botao from '../../components/Botao';
 import Patas from '../../components/Patas';
 import CampoSenha from '../../components/CampoSenha';
+import { Link } from 'react-router-dom';
 
 export default function Cadastro() {
    return (
@@ -13,7 +14,7 @@ export default function Cadastro() {
          </div>
          <section>
             <div className='cadastro__conteudo'>
-               <img src={logo} alt="Logomarca da Adopet" className="logo" />
+               <Link to={'/'}><img src={logo} alt="Logomarca da Adopet" className="logo" /></Link>
                <p className="cadastro__conteudo--titulo">Ainda não tem cadastro?</p>
                <p className="cadastro__conteudo--texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
             </div>

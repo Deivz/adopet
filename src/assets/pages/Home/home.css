@@ -1,0 +1,6 @@
+.home__titulo {
+    color: var(--azul);
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}

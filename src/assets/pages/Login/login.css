@@ -1,4 +1,4 @@
-.cadastro__imagem--lateral{
+.login__imagem--lateral {
     background-image: url(../../images/vetor_lateral.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,18 +10,18 @@
     width: 75px;
 }
 
-.cadastro__conteudo {
+.login__conteudo {
     text-align: center;
 }
 
-.cadastro__conteudo--titulo {
+.login__conteudo--titulo {
     color: var(--azul);
     line-height: 21px;
-    padding-top: 1.5rem;
+    padding: 1.5rem 0;
     text-align: center;
 }
 
-.cadastro__conteudo--texto {
+.login__conteudo--texto {
     color: var(--azul);
     line-height: 21px;
     margin: 0 auto;
@@ -29,25 +29,31 @@
     width: 312px;
 }
 
-.formulario {
+.login__formulario {
     color: var(--cinza);
-    height: 50vh;
+    height: 58vh;
     padding-top: 1rem;
     text-align: center;
 }
 
-.botao__desktop{
-    display: none;
+.lembrar__senha {
+    color: var(--vermelho);
+    font-size: 12px;
+    line-height: 24px;
 }
 
-@media (min-width: 768px) and (orientation: landscape){
-    .formulario{
+.texto__lembrar{
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .login__formulario {
         height: auto;
     }
 }
 
-@media (min-width: 768px){
-    .cadastro__imagem--lateral{
+@media (min-width: 768px) {
+    .login__imagem--lateral {
         height: 655px;
         left: unset;
         position: absolute;
@@ -58,16 +64,8 @@
     }
 }
 
-@media (min-width: 1440px){
-    .formulario{
-        height: 60vh;
-    }
-
-    .botao__desktop{
-        display: block;
-    }
-
-    .botao__mobile{
-        display: none;
+@media (min-width: 1440px) {
+    .login__formulario {
+        height: 65vh;
     }
 }

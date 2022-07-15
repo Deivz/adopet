@@ -9,6 +9,7 @@
   --creme: #FCF0E3;
   --verde: #36D6AD;
   --vermelho: #FC7071;
+  --fundo-card: #E5E5E566;
   --fonte-principal: 'Poppins', sans-serif;
   --fonte-secundaria: 'IBM Plex Sans', sans-serif;
 }
@@ -17,6 +18,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+section{
+  z-index: 1;
 }
 
 .pagina{

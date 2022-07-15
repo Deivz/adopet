@@ -31,7 +31,7 @@ export default function PaginaPadrao() {
                         </Link>
                      </li>
                      <li className='cabecalho__icones'>
-                        <Link to="/home">
+                        <Link to="home">
                            <img src={home} alt="Página inicial" />
                         </Link>
                      </li>
