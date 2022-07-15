@@ -1,10 +1,10 @@
 import './cadastro.css';
 import logo from '../../images/logo_azul.svg';
-import FormInput from '../../components/FormInput';
 import Botao from '../../components/Botao';
 import Patas from '../../components/Patas';
-import CampoSenha from '../../components/CampoSenha';
 import { Link } from 'react-router-dom';
+import CadastroInput from '../../components/CadastroInput';
+import SenhaInput from '../../components/SenhaInput';
 
 export default function Cadastro() {
    return (
@@ -19,10 +19,10 @@ export default function Cadastro() {
                <p className="cadastro__conteudo--texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
             </div>
             <form className="formulario">
-               <FormInput label='Email' type='email' id='email' name='email' placeholder='Escolha seu melhor email' />
-               <FormInput label='Nome' type='text' id='nome' name='nome' placeholder='Digite seu nome completo' />
-               <CampoSenha label='Senha' id='senha' name='senha' placeholder='Crie uma senha' />
-               <CampoSenha label='Confirma sua senha' id='senha__confirma' name='senha__confirma' placeholder='Repita a senha criada acima' />
+               <CadastroInput label='Email' type='email' id='email' name='email' placeholder='Escolha seu melhor email' />
+               <CadastroInput label='Nome' type='text' id='nome' name='nome' placeholder='Digite seu nome completo' />
+               <SenhaInput label='Senha' id='senha' name='senha' placeholder='Crie uma senha' />
+               <SenhaInput label='Confirma sua senha' id='senha__confirma' name='senha__confirma' placeholder='Repita a senha criada acima' />
                <div className="botao__mobile">
                   <Botao type='submit' value='Cadastrar' />
                </div>

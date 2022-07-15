@@ -1,6 +1,6 @@
-import './formInput.css';
+import './cadastroInput.css';
 
-export default function FormInput({ label, type, name, id, placeholder }) {
+export default function CadastroInput({ label, type, name, id, placeholder }) {
     return (
         <>
             <label for={id} className='label'>{label}</label>

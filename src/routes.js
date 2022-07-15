@@ -4,6 +4,7 @@ import Cadastro from './assets/pages/Cadastro/index.jsx';
 import Home from './assets/pages/Home/index.jsx';
 import Inicio from './assets/pages/Inicio/index.jsx';
 import Login from './assets/pages/Login/index.jsx';
+import Mensagem from './assets/pages/Mensagem/index.jsx';
 
 export default function AppRouter() {
    return (
@@ -15,6 +16,7 @@ export default function AppRouter() {
                   <Route path='cadastro' element={<Cadastro />} />
                   <Route path='login' element={<Login />} />
                   <Route path='home' element={<Home />} />
+                  <Route path='mensagem' element={<Mensagem />} />
                </Route>
             </Routes>
          </Router>

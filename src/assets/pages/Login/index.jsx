@@ -1,10 +1,10 @@
 import './login.css';
 import logo from '../../images/logo_azul.svg';
-import FormInput from '../../components/FormInput';
 import Botao from '../../components/Botao';
 import Patas from '../../components/Patas';
-import CampoSenha from '../../components/CampoSenha';
 import { Link } from 'react-router-dom';
+import CadastroInput from '../../components/CadastroInput';
+import SenhaInput from '../../components/SenhaInput';
 
 export default function Login() {
    return (
@@ -18,8 +18,8 @@ export default function Login() {
                <p className="login__conteudo--titulo">Já tem conta? Faça seu login:</p>
             </div>
             <form className="login__formulario">
-               <FormInput label='Email' type='email' id='email' name='email' placeholder='Insira seu email' />
-               <CampoSenha label='Senha' id='senha' name='senha' placeholder='Insira sua senha' />
+               <CadastroInput label='Email' type='email' id='email' name='email' placeholder='Insira seu email' />
+               <SenhaInput label='Senha' id='senha' name='senha' placeholder='Insira sua senha' />
                <Link to={'login'} className='lembrar__senha'><p className='texto__lembrar'>Esqueci minha senha</p></Link>
                <div className="botao__entrar">
                   <Botao type='submit' value='Entrar' />

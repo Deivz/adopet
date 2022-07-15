@@ -16,6 +16,7 @@
 }
 
 .input::placeholder {
+    font-family: var(--fonte-principal);
     font-size: 12px;
 }
 

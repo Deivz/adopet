@@ -42,7 +42,7 @@
     align-items: flex-end;
     display: flex;
     justify-content: center;
-    width: 78vw;
+    width: 76vw;
 }
 
 .ilustracao {
@@ -108,5 +108,11 @@
     
     .ilustracao {
         height: 432px;
+    }
+}
+
+@media (min-width: 1600px){
+    .container__ilustracao{
+        width: 76vw;
     }
 }

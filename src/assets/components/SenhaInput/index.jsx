@@ -1,8 +1,8 @@
-import './campoSenha.css';
+import './senhaInput.css';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useState } from 'react';
 
-export default function CampoSenha({ label, name, id, placeholder }) {
+export default function SenhaInput({ label, name, id, placeholder }) {
     const [mostrar, setMostrar] = useState(false);
 
     function mostrarOuEsconderSenha(){

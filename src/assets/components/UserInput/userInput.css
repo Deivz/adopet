@@ -1,0 +1,33 @@
+.user__label {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: .5rem;
+    width: 100%;
+}
+
+.user__input {
+    background: var(--branco);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
+    height: 48px;
+    text-align: center;
+    width: 280px;
+}
+
+.user__input::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 1rem;
+    text-align: left;
+}
+
+@media (min-width: 768px){
+    .user__input {
+        width: 492px;
+    }
+}
