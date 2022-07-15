@@ -3,14 +3,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
 }
 
-/* .icone__olho{
+.icone__olho{
     height: 40px;
-    margin-right: 20px;
+    margin-left: 240px;
+    margin-top: 6px;
     position: absolute;
-} */
+}
 
+ 
 .campo__senha {
     background: var(--cinza-claro);
     border: none;
@@ -26,6 +29,7 @@
     font-size: 12px;
 }
 
+
 @media (min-width: 768px){
     .campo__senha {
         width: 344px;
@@ -34,14 +38,22 @@
     .campo__senha::placeholder {
         font-size: 14px;
     }
+
+    .icone__olho{
+        margin-left: 272px;
+    }
 }
 
 @media (min-width: 1440px){
     .campo__senha {
-        width: 552px;
+        width: 362px;
     }
     
     .campo__senha::placeholder {
         font-size: 16px;
+    }
+
+    .icone__olho{
+        margin-left: 302px;
     }
 }

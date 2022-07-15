@@ -3,12 +3,12 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 export default function CampoSenha({ label, name, id, placeholder }) {
     return (
-        <div className='container__senha'>
-            <div className='icone__olho'>
-                <label for={id} className='label'>{label}</label>
+        <>
+            <label for={id} className='label'>{label}</label>
+            <div className='container__senha'>
                 <input type='password' name={name} id={id} placeholder={placeholder} className='campo__senha' required />
-                <FaEyeSlash />
+                <i className='icone__olho'><FaEyeSlash /></i>
             </div>
-        </div>
+        </>
     );
 }

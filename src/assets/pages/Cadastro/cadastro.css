@@ -1,4 +1,20 @@
-.secao__cadastro {
+.cadastro__imagem--lateral{
+    background-image: url(../../images/vetor_lateral.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 435px;
+    left: 0;
+    position: absolute;
+    top: 33vh;
+    transform: scaleX(-1);
+    width: 75px;
+}
+
+section{
+    z-index: 1;
+}
+
+.cadastro__conteudo {
     text-align: center;
 }
 
@@ -19,14 +35,38 @@
 
 .formulario {
     color: var(--cinza);
+    height: 50vh;
     padding-top: 1rem;
+    text-align: center;
 }
 
 .botao__desktop{
     display: none;
 }
 
+@media (min-width: 768px) and (orientation: landscape){
+    .formulario{
+        height: auto;
+    }
+}
+
+@media (min-width: 768px){
+    .cadastro__imagem--lateral{
+        height: 655px;
+        left: unset;
+        position: absolute;
+        right: 0;
+        top: 20vh;
+        transform: scaleX(1);
+        width: 110px;
+    }
+}
+
 @media (min-width: 1440px){
+    .formulario{
+        height: 70vh;
+    }
+
     .botao__desktop{
         display: block;
     }

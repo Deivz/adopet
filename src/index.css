@@ -19,15 +19,20 @@
   padding: 0;
 }
 
-#root > main.conteudo{
-  background-image: url('./assets/images/vetor_topo.svg'), url('./assets/images/linha_superior.svg'), url('./assets/images/vetor_lateral.svg');
-  background-position: top left, top left, center right;
+.pagina{
+  background-image: url('./assets/images/vetor_topo.svg'), url('./assets/images/linha_superior.svg');
+  background-position: top left, top left;
   background-repeat: no-repeat;
   color: var(--branco);
   display: flex;
   font-family: var(--fonte-principal);
   flex-direction: column;
   min-height: 100vh;
+}
+
+.container{
+  margin: 0 auto;
+  width: 86vw;
 }
 
 .fundo__azul{
@@ -39,11 +44,11 @@
 }
 
 @media (min-width: 768px){
-  .bg__azul {
+  .pagina {
     background-size: 530px 435px, 560px 469px, 135px 664px;
   }
 
-  .bg__branco {
+  .pagina {
     background-size: 530px 435px, 560px 469px, 135px 664px;
   }
 }

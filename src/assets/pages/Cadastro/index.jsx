@@ -9,16 +9,19 @@ export default function Cadastro() {
    return (
       <>
          <Patas />
-         <section className="secao__cadastro cadastro__figura--direita cadastro__figura--esquerda">
-            <img src={logo} alt="Logomarca da Adopet" className="logo" />
-            <p className="cadastro__conteudo--titulo">Ainda não tem cadastro?</p>
-            <p className="cadastro__conteudo--texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+         <div className='cadastro__imagem--lateral'>
+         </div>
+         <section>
+            <div className='cadastro__conteudo'>
+               <img src={logo} alt="Logomarca da Adopet" className="logo" />
+               <p className="cadastro__conteudo--titulo">Ainda não tem cadastro?</p>
+               <p className="cadastro__conteudo--texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+            </div>
             <form className="formulario">
                <FormInput label='Email' type='email' id='email' name='email' placeholder='Escolha seu melhor email' />
                <FormInput label='Nome' type='text' id='nome' name='nome' placeholder='Digite seu nome completo' />
                <CampoSenha label='Senha' id='senha' name='senha' placeholder='Crie uma senha' />
-               {/* <FormInput label='Senha' type='password' id='senha' name='senha' placeholder='Crie uma senha' />
-               <FormInput label='Confirma sua senha' type='password' id='senha__confirma' name='senha__confirma' placeholder='Repita a senha criada acima' /> */}
+               <CampoSenha label='Confirma sua senha' id='senha__confirma' name='senha__confirma' placeholder='Repita a senha criada acima' />
                <div className="botao__mobile">
                   <Botao type='submit' value='Cadastrar' />
                </div>
