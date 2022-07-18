@@ -43,13 +43,15 @@ export default function PaginaPadrao() {
                   </ul>
                </nav>
                {(pathname === '/home' || pathname === '/mensagem' || pathname === '/perfil') &&
-                  <div className='perfil'>
-                     <img src={user} alt="Área de acesso ao usuário" className="cabecalho__icones" />
-                  </div>
+                  <Link to='perfil'>
+                     <div className='perfil'>
+                        <img src={user} alt="Área de acesso ao usuário" className="cabecalho__icones" />
+                     </div>
+                  </Link>
                }
             </div>
          </header>
-         <div className= 'container feed'>
+         <div className='container feed'>
             <Outlet />
          </div>
          <footer>
