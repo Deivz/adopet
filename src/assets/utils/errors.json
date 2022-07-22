@@ -1,0 +1,23 @@
+{
+    "email":{
+        "email": "Digite um email válido.",
+        "required": "O campo email não pode estar vazio.",
+        "max": "O email deve possuir no máximo 50 caracteres."
+    },
+    "nome": {
+        "required": "O campo nome não pode estar vazio.",
+        "min": "O nome deve possuir no mínimo 2 caracteres.",
+        "max": "O nome deve possuir no máximo 50 caracteres.",
+        "matches": "O campo nome não pode possuir números ou operadores."
+        
+    },
+    "senha":{
+        "required" : "O campo senha não pode estar vazio.",
+        "max": "Sua senha deve possuir no máximo 15 caracteres",
+        "matches" : "A senha deve conter ao menos um número, uma letra maiúscula, uma minúscula, um dos caracteres especiais ($ * & @ #) e no mínimo 6 caracteres."
+    },
+    "senha__confirma":{
+        "required" : "O campo de confirmar senha não pode estar vazio.",
+        "oneOf": "A confirmação de senha difere da senha digitada."
+    }
+}

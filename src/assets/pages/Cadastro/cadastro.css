@@ -31,9 +31,15 @@
 
 .formulario {
     color: var(--cinza);
-    height: 50vh;
+    min-height: 50vh;
     padding-top: 1rem;
     text-align: center;
+}
+
+.formulario__campos{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .botao__desktop{
@@ -42,7 +48,7 @@
 
 @media (min-width: 768px) and (orientation: landscape){
     .formulario{
-        height: auto;
+        min-height: auto;
     }
 }
 
@@ -60,7 +66,7 @@
 
 @media (min-width: 1440px){
     .formulario{
-        height: 60vh;
+        min-height: 60vh;
     }
 
     .botao__desktop{

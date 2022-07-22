@@ -2,7 +2,7 @@ import './senhaInput.css';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { useState } from 'react';
 
-export default function SenhaInput({ label, name, id, placeholder }) {
+export default function SenhaInput({ register, label, name, id, placeholder }) {
     const [mostrar, setMostrar] = useState(false);
 
     function mostrarOuEsconderSenha(){
@@ -13,7 +13,14 @@ export default function SenhaInput({ label, name, id, placeholder }) {
         <>
             <label for={id} className='label'>{label}</label>
             <div className='container__senha'>
-                <input type={mostrar ? 'text' : 'password'} name={name} id={id} placeholder={placeholder} className='campo__senha' required />
+                <input
+                    {...register(`${name}`)}
+                    type={mostrar ? 'text' : 'password'}
+                    name={name}
+                    id={id}
+                    placeholder={placeholder}
+                    className='campo__senha'
+                />
                 <i onClick={mostrarOuEsconderSenha} className='icone__olho'>{mostrar ? <FaEye /> : <FaEyeSlash />}</i>
             </div>
         </>
