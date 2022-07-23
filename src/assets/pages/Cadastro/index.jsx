@@ -10,6 +10,8 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { regExName, regExPassword } from '../../utils/regexValidation.js';
 import CampoErro from '../../components/CampoErro';
+import { api } from '../../../services/api';
+import {useNavigate} from "react-router-dom";
 
 export default function Cadastro() {
 
@@ -24,8 +26,22 @@ export default function Cadastro() {
       resolver: yupResolver(validacao)
    }, []);
 
+   const navigate = useNavigate();
+
    function onSubmit(data) {
-      console.log(data);
+      api
+         .post('http://sleepy-eyrie-42042.herokuapp.com/users', {
+            email: data.email,
+            nome: data.nome,
+            senha: data.senha
+         })
+         .then(() => {
+            alert("Usuário cadastrado com sucesso!");
+            navigate('/login');
+         })
+         .catch(() => {
+            navigate('/notfound');
+         });
    }
 
    return (

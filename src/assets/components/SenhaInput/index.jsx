@@ -5,13 +5,13 @@ import { useState } from 'react';
 export default function SenhaInput({ register, label, name, id, placeholder }) {
     const [mostrar, setMostrar] = useState(false);
 
-    function mostrarOuEsconderSenha(){
+    function mostrarOuEsconderSenha() {
         setMostrar(mostrar ? false : true);
     }
 
     return (
         <>
-            <label for={id} className='label'>{label}</label>
+            <label htmlFor={id} className='label'>{label}</label>
             <div className='container__senha'>
                 <input
                     {...register(`${name}`)}
