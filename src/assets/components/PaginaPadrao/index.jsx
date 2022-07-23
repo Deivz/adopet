@@ -36,13 +36,13 @@ export default function PaginaPadrao() {
                         </Link>
                      </li>
                      <li className='cabecalho__icones'>
-                        <Link to="mensagem">
+                        <Link to="contato">
                            <img src={mensagens} alt="Caixa de mensagens" />
                         </Link>
                      </li>
                   </ul>
                </nav>
-               {(pathname === '/home' || pathname === '/mensagem' || pathname === '/perfil') &&
+               {(pathname === '/home' || pathname === '/contato' || pathname === '/perfil') &&
                   <Link to='perfil'>
                      <div className='perfil'>
                         <img src={user} alt="Área de acesso ao usuário" className="cabecalho__icones" />
