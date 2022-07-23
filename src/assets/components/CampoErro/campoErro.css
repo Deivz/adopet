@@ -4,17 +4,11 @@
     font-size: 1rem;
     padding-bottom: 2rem;
     text-align: left;
-    width: 312px;
-}
-
-@media (min-width: 768px){
-    .erro{
-        width: 344px;
-    }
+    width: 300px;
 }
 
 @media (min-width: 1440px){
     .erro{
-        width: 552px;
+        width: 500px;
     }
 }

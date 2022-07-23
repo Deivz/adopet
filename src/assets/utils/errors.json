@@ -21,5 +21,18 @@
     "senha__confirma":{
         "required" : "O campo de confirmar senha não pode estar vazio.",
         "oneOf": "A confirmação de senha difere da senha digitada."
+    },
+    "telefone":{
+        "required": "O campo telefone não pode estar vazio.",
+        "matches": "Telefone inválido! É necessário informar o DDD sem o 0 e o número do telefone."
+    },
+    "nome__animal":{
+        "required": "O campo nome do animal não pode estar vazio.",
+        "min": "O nome do animal deve possuir no mínimo 2 caracteres.",
+        "max": "O nome do animal deve possuir no máximo 20 caracteres."
+    },
+    "contato__texto":{
+        "required": "O campo mensagem não pode estar vazio.",
+        "max": "A mensagem deve possuir no máximo 300 caracteres."
     }
 }
