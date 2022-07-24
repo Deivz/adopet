@@ -39,14 +39,6 @@
     width: 100%;
 }
 
-.foto__perfil {
-    background-color: var(--branco);
-    border-radius: 50%;
-    height: 80px;
-    margin: 1rem auto 0 auto;
-    width: 80px;
-}
-
 .editar__foto {
     color: var(--vermelho);
     font-size: 12px;
@@ -60,8 +52,10 @@
     border: none;
     border-radius: 6px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    font-family: var(--fonte-principal);
     height: 172px;
     mix-blend-mode: normal;
+    padding: .5rem 1rem;
     resize: none;
     width: 280px;
 }
@@ -70,7 +64,6 @@
     font-family: var(--fonte-principal);
     font-size: 14px;
     line-height: 24px;
-    padding: 1rem 0 0 1rem;
     text-align: left;
 }
 

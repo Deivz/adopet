@@ -38,7 +38,7 @@
     font-family: var(--fonte-principal);
     height: 172px;
     mix-blend-mode: normal;
-    padding: .5rem;
+    padding: .5rem 1rem;
     resize: none;
     width: 280px;
 }
@@ -47,7 +47,6 @@
     font-family: var(--fonte-principal);
     font-size: 14px;
     line-height: 24px;
-    padding: 1rem 0 0 1rem;
     text-align: left;
 }
 

@@ -15,7 +15,7 @@
     font-family: var(--fonte-principal);
     height: 48px;
     margin-bottom: 1rem;
-    padding: .5rem;
+    padding: .5rem 1rem;
     text-align: left;
     width: 280px;
 }
@@ -24,7 +24,6 @@
     font-family: var(--fonte-principal);
     font-size: 14px;
     line-height: 24px;
-    padding-left: 1rem;
     text-align: left;
 }
 

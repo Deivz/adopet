@@ -30,7 +30,7 @@ export default function Cadastro() {
 
    function onSubmit(data) {
       api
-         .post('http://sleepy-eyrie-42042.herokuapp.com/users', {
+         .post('/users', {
             email: data.email,
             nome: data.nome,
             senha: data.senha

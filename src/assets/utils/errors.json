@@ -34,5 +34,14 @@
     "contato__texto":{
         "required": "O campo mensagem não pode estar vazio.",
         "max": "A mensagem deve possuir no máximo 300 caracteres."
+    },
+    "cidade": {
+        "required": "O campo cidade não pode estar vazio.",
+        "min": "O nome da cidade deve possuir no mínimo 2 caracteres.",
+        "max": "O nome da cidade deve possuir no máximo 50 caracteres."
+    },
+    "perfil__sobre":{
+        "required": "O campo sobre não pode estar vazio.",
+        "max": "O campo sobre deve possuir no máximo 300 caracteres."
     }
 }
