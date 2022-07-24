@@ -25,18 +25,42 @@ export default function Perfil(){
      }, []);
 
      const [users, setUsers] = useState([]);
+     const [profileImage, setProfileImage] = useState(null);
+     const [imageError, setImageError] = useState(false);
 
      const navigate = useNavigate();
 
      useEffect(() => {
          api.get('/users').then((response) => {
-             setUsers(response.data[0]);
+             setUsers(response.data[3]);
          })
      }, []);
 
-     function salvar(data){
+     function handleImageChange(event){
+        const tiposPermitidos = ["image/png", "image/jpeg", "image/jpg"];
+        const imagem = event.target.files[0];
+        if (imagem && tiposPermitidos.includes(imagem.type)) {
+            let reader = new FileReader();
+            reader.onloadend = () => {
+               setProfileImage(reader.result);
+            };
+            reader.readAsDataURL(imagem);
+        } else {
+            setImageError(true);
+        }
+    }
+
+    function salvar(data){
         api
-            .patch('/users/' + users.id, data)
+            .patch('/users/' + users.id, {
+                "email": data.email,
+                "nome": data.nome,
+                "senha": data.senha,
+                "telefone": data.telefone,
+                "cidade": data.cidade,
+                "perfil__sobre": data.perfil__sobre,
+                "foto__upload": profileImage
+            })
             .then(() => {
                 alert("Usuário modificado com sucesso!");
                 window.location.reload();
@@ -55,7 +79,7 @@ export default function Perfil(){
                 <form className="perfil__formulario" onSubmit={handleSubmit(salvar)}>
                     <p className='perfil__titulo'>Perfil</p>
                     <p className='perfil__label'>Foto</p>
-                    <FotoPerfil />
+                    <FotoPerfil imageDefault={users.foto__upload} loadImage={handleImageChange} imageUploaded={profileImage} />
                     <p className='editar__foto'>Clique na foto para editar</p>
                     <div className='formulario__campos'>
                         <UserInput
