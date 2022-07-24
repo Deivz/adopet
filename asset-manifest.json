@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/adopet/static/css/main.de809aad.css",
-    "main.js": "/adopet/static/js/main.84974ef4.js",
+    "main.css": "/adopet/static/css/main.030e2a2d.css",
+    "main.js": "/adopet/static/js/main.0f534842.js",
     "static/media/ilustracao1.png": "/adopet/static/media/ilustracao1.858792cc056bcba8dc4c.png",
     "static/media/Patas.png": "/adopet/static/media/Patas.10a6e47bcaf77bfb7a2e.png",
     "static/media/logo_azul.svg": "/adopet/static/media/logo_azul.4a935b26a6f8a4a7b05e49fb0d1127c9.svg",
@@ -15,11 +15,11 @@
     "static/media/vetor_topo.svg": "/adopet/static/media/vetor_topo.787cecd4b88310eac38d.svg",
     "static/media/linha_superior.svg": "/adopet/static/media/linha_superior.06922a74d4a80576c567.svg",
     "static/media/Casa.svg": "/adopet/static/media/Casa.ee2869b277070865e1bcf08741dae8fe.svg",
-    "main.de809aad.css.map": "/adopet/static/css/main.de809aad.css.map",
-    "main.84974ef4.js.map": "/adopet/static/js/main.84974ef4.js.map"
+    "main.030e2a2d.css.map": "/adopet/static/css/main.030e2a2d.css.map",
+    "main.0f534842.js.map": "/adopet/static/js/main.0f534842.js.map"
   },
   "entrypoints": [
-    "static/css/main.de809aad.css",
-    "static/js/main.84974ef4.js"
+    "static/css/main.030e2a2d.css",
+    "static/js/main.0f534842.js"
   ]
 }
