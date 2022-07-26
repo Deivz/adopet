@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+<p align="center">
+<img src="https://user-images.githubusercontent.com/78604613/180907738-a36a7739-e0aa-4522-9650-38db7d349950.svg" alt="Logo da Adopet" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Alura Front End Challenge #4 - Adopet
 
-## Available Scripts
+Repositório criado para o desafio de front end da Alura edição de número 4. O projeto consiste na elaboração de um site para adoção de pets, onde o usuário pode se cadastrar, realizar o login, mandar mensagens para o responsável pelo pet pelo qual tenha se interessado e também editar seu cadastro.
 
-In the project directory, you can run:
 
-### `npm start`
+## No que consiste o desafio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O desafio se dá da seguinte forma: é passado alguns cards no Trello com as atividades bem como o layout no Figma. Cada card consiste em uma atividade que deve ser realizada a fim de que todo o backlog possa ser cumprido e o desenvolvedor consiga também se organizar. O layout da página pode ser visto no link abaixo:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://www.figma.com/file/TlfkDoIu8uyjZNla1T8TpH/Challenge---Adopet
 
-### `npm test`
+É aconselhado seguir o modelo indicado ao invés de desenvolver um próprio para fins de correção/comparação, entretanto a forma de implementar e a adição de recursos e/ou melhorias fica a critério do desenvolvedor.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Expectativas com o projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+O projeto deve ser entregue conforme solicitado via Figma e Trello, como já mencionado. Espera-se que com o desafio o desenvolvedor possa por em prática seus conhecimentos seguindo um escopo de atividades que se assemelha as demandas de trabalho em uma empresa. Minha expectativa pessoal era a criação de uma SPA, utilizando React.JS, que seja o mais próximo possível do solicitado. Algumas modificações foram implementadas por mim e serão explicadas mais adiante e o motivo de terem sido feitas.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tecnologias e ferramentas utilizadas
+### `React.js`
+Como já mencionado, o projeto foi todo desenvolvido em React.js. O foco dessa escolha é o aperfeiçoamento do conhecimento teórico e prático nesta biblioteca que é uma das mais utilizadas no mundo, além é claro de tornar o desenvolvimento dinâmico e atingir o objetivo de forma mais rápida e eficaz.
 
-### `npm run eject`
+### `CSS puro`
+Para fins de prática optei por fazer o estilo da página todo em CSS puro, sem a utilização de nenhum framework ou pré-processador.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `Yup e react-hook-form`
+Para a validação dos dados informados no front end optei por utilizar o yup com o resolver do react-hook-form. Além de serem muito práticos e de fácil utilização, são ferramentas que já domino, o que me traz segurança e eficiência no desenvolvimento da SPA. Esta validação é implementada no formulário de login, no formulário de cadastro e no formulário de alteração de usuário.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `React-router-dom`
+Para a implementação das rotas foi utilizado o react-router-dom, pois é uma ferramenta bastante popular além de fácil implementação.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `React-icons`
+Para a inclusão do ícone do olho que indica a ação de mostrar a senha foi utilizado o react-icons.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `Axios`
+A integração com a API foi utilizada a lib axios. Ferramenta de fácil utilização e amplamente utilizada na comunidade, a escolha se deu por estes motivos. A explicação da API será feita logo adiante.
