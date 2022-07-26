@@ -66,8 +66,35 @@ Não fora solicitado a implementação de um sistema de autenticação para aces
 
 O usuário passa a ter então acesso aos demais conteúdos, exceto à página de informações de usuário. Caso ele não esteja logado, será redirecionado para página de login.
 
-###Sistema de validação personalizado
+### Sistema de validação personalizado
 Fora implementado um sistema personalizado a fim de simular o mais próximo de um cenário real, onde a senha, por exemplo, precisa ser uma senha forte. Onde o telefone somente pode conter DDDs existentes no brasil. Nomes não podem conter caracteres não convencionais para nomes (como por exemplo números e operadores matemáticos).
 
-###Alteração na imagem com envio para o banco de dados
+### Alteração na imagem com envio para o banco de dados
 A alteração da imagem foi imposta, entretanto o envio para o BD e a forma como foi feita foi personalizada por mim. Ao se adicionar a foto ela mostra um preview antes de armazenar a fim de que o usuário possa verificar se está de acordo com sua expectativa. Ao salvar ela é enviada para o banco como blob. Ao realizar o login ela é trazida do BD podendo ser alterada novamente conforme o usuário desejar.
+
+### Botão de logout
+Implementei um botão de logout, uma vez que o usuário é persistido ao realizar o login (através do localstorage). Sendo assim, o usuário pode simplesmente se deslogar ao clicar no botão, permitindo que outro usuário possa se conectar.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/78604613/180915204-b1f0c0d0-d167-4c68-9ed1-a33af443d831.png" alt="Página de usuário da Adopet" />
+</p>
+
+
+## Desafios, dificuldades e superação
+Para a realização deste projeto foi necessário muita pesquisa e estudo, uma vez que não era de meu conhecimento a realização de certas atividades. As principais que posso citar foram a realização do upload da imagem, o sistema de autenticação e a integração completa com uma API.
+
+### `Upload de imagem`
+Para o upload ser realizado através de um clique na foto foi necessário a utilização da ref, ferramenta que até então desconhecia. Para essa implementação tive que utilizar class component ao invés de function component. Como nunca tinha utilizado o React desta forma, pra mim foi bastante difícil e ao mesmo tempo desafiador. Conseguir realizar esta implementação me fez aprender bastante, tive que recorrer à documentação e a vídeos para entender seu funcionamento de forma satisfatória. Fora a própria implementação do FileReader para a realização do upload em si.
+
+### `Autenticação`
+Para a autenticação tive que usar o useContext. Não estava habituado a trabalhar utilizando contextos, um novo horizonte se abriu. Entender e aplicar contextos no react realmente demandou algumas longas horas de estudo. Foi bastante recompensador ter que lidar com essa dificuldade.
+
+### `Integração completa com API`
+Já estava habituado a lidar com integração com APIs de forma básica, mas nunca através de uma SPA. Fazer páginas dinâmicas integrando com APIs foi uma novidade, bastante desafiadora e também muito interessante. O maior desafio se deu em entender como os componentes de renderizam e quais hooks precisam ser utilizados para fazer esta integração acontecer da forma mais performática possível.
+
+
+## Conclusão
+Este projeto, possivelmente, foi o que mais agregou à minha curta (até então) carreira de desenvolvedor. Pude desenvolver um projeto do zero 100% sozinho, tendo que me desdobrar, estudar, aplicar, errar, entender os erros, consertá-los e por fim conseguir entregar o que foi solicitado, sempre visando utilizar de boas práticas e das ferramentas mais atuais possíveis.
+A forma como o projeto é idealizado, simulando um trabalho em uma empresa real, me permitiu conhecer uma nova perspectiva e validar todo o conhecimento e potencial que eu tenho. Acredito que com ele estou muito mais preparado do que antes, muito mais maduro e muito mais experiente (óbvio que ainda é uma gota no oceano, no qual pretendo mergulhar ainda mais).
+
+Por fim, o projeto pode ser visualizado no GH Pages: https://deivz.github.io/adopet/
