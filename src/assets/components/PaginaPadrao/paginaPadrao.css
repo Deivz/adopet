@@ -25,6 +25,14 @@
     display: none;
 }
 
+.perfil{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+
 .feed {
     display: flex;
     flex-direction: column;

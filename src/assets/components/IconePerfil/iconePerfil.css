@@ -1,0 +1,10 @@
+.icone__perfil, .icone__perfil--semFoto{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.icone__perfil--semFoto{
+    background: url('../../images/user.svg') no-repeat center;
+    background-size: contain;
+}

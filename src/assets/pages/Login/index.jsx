@@ -5,36 +5,16 @@ import Patas from '../../components/Patas';
 import { Link, useNavigate } from 'react-router-dom';
 import CadastroInput from '../../components/CadastroInput';
 import SenhaInput from '../../components/SenhaInput';
-import { api } from "../../../services/api.js";
 import { useForm } from 'react-hook-form';
-import { useState } from 'react';
 import CampoErro from '../../components/CampoErro';
+import { AuthContext } from '../../../contexts/AuthContext';
+import { useContext } from 'react';
 
 export default function Login() {
 
-   const navigate = useNavigate();
+   const {authenticated, logar, user, validUser, validPassword} = useContext(AuthContext);
+   
    const { register, handleSubmit } = useForm();
-   const [usuarioValido, setUsuarioValido] = useState(true);
-   const [senhaValida, setSenhaValida] = useState(true);
-
-   function logar(data) {
-      api
-         .get('/users')
-         .then((response) => {
-            if (response.data.find(element => element.email === data.email)) {
-               setUsuarioValido(true);
-               if (response.data.find(element => element.senha === data.senha)) {
-                  setSenhaValida(true);
-                  alert("Login realizado com sucesso!");
-                  navigate('/home');
-               }else{
-                  setSenhaValida(false)
-               }
-            }else{
-               setUsuarioValido(false);
-            }
-         })
-   }
 
 return (
    <>
@@ -49,13 +29,13 @@ return (
          <form className="login__formulario" onSubmit={handleSubmit(logar)}>
             <div className='formulario__campos'>
                <CadastroInput register={register} label='Email' type='email' id='email' name='email' placeholder='Insira seu email' />
-               {!usuarioValido && <CampoErro type='invalid' field="email" />}
+               {!validUser && <CampoErro type='invalid' field="email" />}
             </div>
             <div className='formulario__campos'>
                <SenhaInput register={register} label='Senha' id='senha' name='senha' placeholder='Insira sua senha' />
-               {!senhaValida && <CampoErro type='invalid' field="senha" />}
+               {!validPassword && <CampoErro type='invalid' field="senha" />}
             </div>
-            <Link to={'login'} className='lembrar__senha'><p className='texto__lembrar'>Esqueci minha senha</p></Link>
+            <Link to={'/login'} className='lembrar__senha'><p className='texto__lembrar'>Esqueci minha senha</p></Link>
             <div className="botao__entrar">
                <Botao type='submit' value='Entrar' />
             </div>

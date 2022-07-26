@@ -1,4 +1,4 @@
-.foto__perfil {
+.foto__perfil, .foto__perfil--semFoto{
     border-radius: 50%;
     cursor: pointer;
     height: 80px;
@@ -6,11 +6,7 @@
     width: 80px;
 }
 
-.foto__perfil--padrao {
-    background: url('../../images/usuario.png') no-repeat center;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 80px;
-    margin: 1rem auto 0 auto;
-    width: 80px;
+.foto__perfil--semFoto{
+    background: url('../../images/user.svg') no-repeat center;
+    background-size: cover;
 }

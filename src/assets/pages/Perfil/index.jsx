@@ -1,76 +1,62 @@
+import './perfil.css';
 import Botao from '../../components/Botao';
 import UserInput from '../../components/UserInput';
-import './perfil.css';
-import { api } from "../../../services/api.js";
-import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import CampoErro from '../../components/CampoErro';
 import { regExName, regExTelefone } from '../../utils/regexValidation.js';
-import {useNavigate} from "react-router-dom";
 import FotoPerfil from '../../components/FotoPerfil';
+import { useContext, useEffect } from 'react';
+import { ImageUploadContext } from '../../../contexts/ImageUploadContext';
+import { AuthContext } from '../../../contexts/AuthContext';
+import { api } from '../../../services/api';
 
-export default function Perfil(){
+export default function Perfil() {
+
+    const { handleImageChange, profileImage, imageDefault, imageError } = useContext(ImageUploadContext);
+    const { user, setUser } = useContext(AuthContext);
 
     const validacao = yup.object().shape({
         nome: yup.string().required().min(2).max(50).matches(regExName),
         telefone: yup.string().required().matches(regExTelefone),
         cidade: yup.string().required().min(2).max(50),
         perfil__sobre: yup.string().required().max(300)
-     });
-  
-     const { register, handleSubmit, formState: { errors } } = useForm({
+    });
+
+    const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(validacao)
-     }, []);
+    }, []);
 
-     const [users, setUsers] = useState([]);
-     const [profileImage, setProfileImage] = useState(null);
-     const [imageError, setImageError] = useState(false);
-
-     const navigate = useNavigate();
-
-     useEffect(() => {
-         api.get('/users').then((response) => {
-             setUsers(response.data[3]);
-         })
-     }, []);
-
-     function handleImageChange(event){
-        const tiposPermitidos = ["image/png", "image/jpeg", "image/jpg"];
-        const imagem = event.target.files[0];
-        if (imagem && tiposPermitidos.includes(imagem.type)) {
-            let reader = new FileReader();
-            reader.onloadend = () => {
-               setProfileImage(reader.result);
-            };
-            reader.readAsDataURL(imagem);
-        } else {
-            setImageError(true);
-        }
-    }
-
-    function salvar(data){
-        api
-            .patch('/users/' + users.id, {
-                "email": data.email,
-                "nome": data.nome,
-                "senha": data.senha,
-                "telefone": data.telefone,
-                "cidade": data.cidade,
-                "perfil__sobre": data.perfil__sobre,
-                "foto__upload": profileImage
+    useEffect(() => {
+        api.get('/users/' + user.id)
+            .then(response => {
+                setUser(response.data);
             })
+            .catch(error => {
+                console.log(error);
+            })
+    }, [salvar]);
+
+    function salvar(data) {
+        api.patch('/users/' + user.id, {
+            "email": data.email,
+            "nome": data.nome,
+            "senha": data.senha,
+            "telefone": data.telefone,
+            "cidade": data.cidade,
+            "perfil__sobre": data.perfil__sobre,
+            "foto__upload": profileImage
+        })
             .then(() => {
                 alert("Usuário modificado com sucesso!");
-                window.location.reload();
-             })
-             .catch(() => {
-                navigate('/notfound');
-             });
-     }
+            })
+            .catch((error) => {
+                alert(error);
+            });
+    }
 
-    return(
+    return (
         <>
             <div className='perfil__imagem--lateral'>
             </div>
@@ -79,7 +65,14 @@ export default function Perfil(){
                 <form className="perfil__formulario" onSubmit={handleSubmit(salvar)}>
                     <p className='perfil__titulo'>Perfil</p>
                     <p className='perfil__label'>Foto</p>
-                    <FotoPerfil imageDefault={users.foto__upload} loadImage={handleImageChange} imageUploaded={profileImage} />
+                    <div className='formulario__campos'>
+                        <FotoPerfil
+                            imageDefault={imageDefault}
+                            loadImage={handleImageChange}
+                            imageUploaded={profileImage}
+                        />
+                        {imageError && <CampoErro type="imagemInvalida" field="profileImage" />}
+                    </div>
                     <p className='editar__foto'>Clique na foto para editar</p>
                     <div className='formulario__campos'>
                         <UserInput
@@ -88,7 +81,7 @@ export default function Perfil(){
                             type='text'
                             id='nome'
                             name='nome'
-                            placeholder={users.nome}
+                            placeholder={user.nome}
                         />
                         {errors?.nome?.message && <CampoErro type={errors.nome.type} field="nome" />}
                     </div>
@@ -99,7 +92,7 @@ export default function Perfil(){
                             type='tel'
                             id='telefone'
                             name='telefone'
-                            placeholder = {users.telefone}
+                            placeholder={user.telefone}
                         />
                         {errors?.telefone?.message && <CampoErro type={errors.telefone.type} field="telefone" />}
                     </div>
@@ -110,19 +103,19 @@ export default function Perfil(){
                             type='text'
                             id='cidade'
                             name='cidade'
-                            placeholder = {users.cidade}
+                            placeholder={user.cidade}
                         />
                         {errors?.cidade?.message && <CampoErro type={errors.cidade.type} field="cidade" />}
                     </div>
                     <div className='formulario__campos'>
-                    <label htmlFor='perfil__sobre' className='perfil__label'>Sobre</label>
+                        <label htmlFor='perfil__sobre' className='perfil__label'>Sobre</label>
                         <textarea
                             {...register('perfil__sobre')}
                             id='perfil__sobre'
                             className='perfil__sobre'
                             name='perfil__sobre'
                             maxLength={300}
-                            placeholder = {users.perfil__sobre}
+                            placeholder={user.perfil__sobre}
                         />
                         {errors?.perfil__sobre?.message && <CampoErro type={errors.perfil__sobre.type} field="perfil__sobre" />}
                     </div>

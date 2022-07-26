@@ -43,5 +43,8 @@
     "perfil__sobre":{
         "required": "O campo sobre não pode estar vazio.",
         "max": "O campo sobre deve possuir no máximo 300 caracteres."
+    },
+    "profileImage":{
+        "imagemInvalida": "A imagem deve ser do tipo .jpeg, .jpg ou .png."
     }
 }

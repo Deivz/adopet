@@ -3,10 +3,17 @@ import { Outlet, useLocation } from 'react-router-dom';
 import logo from "../../images/logo_branca.svg";
 import home from "../../images/Casa.svg";
 import mensagens from "../../images/Mensagens.svg";
-import user from "../../images/user.svg";
 import { Link } from 'react-router-dom';
+import { ImageUploadContext } from '../../../contexts/ImageUploadContext';
+import { useContext } from 'react';
+import IconePerfil from '../IconePerfil';
+import BotaoSair from '../BotaoSair';
+import { AuthContext } from '../../../contexts/AuthContext';
 
 export default function PaginaPadrao() {
+
+   const { imageDefault } = useContext(ImageUploadContext);
+   const { authenticated } = useContext(AuthContext);
 
    const { pathname } = useLocation();
    (function mudarCorDeFundo() {
@@ -43,12 +50,14 @@ export default function PaginaPadrao() {
                   </ul>
                </nav>
                {(pathname === '/home' || pathname === '/contato' || pathname === '/perfil') &&
-                  <Link to='perfil'>
-                     <div className='perfil'>
-                        <img src={user} alt="Área de acesso ao usuário" className="cabecalho__icones" />
-                     </div>
-                  </Link>
+                  <div className='perfil'>
+                     <Link to='perfil'>
+                        <IconePerfil imageDefault={imageDefault} />
+                     </Link>
+                     {authenticated && <BotaoSair />}
+                  </div>
                }
+
             </div>
          </header>
          <div className='container feed'>

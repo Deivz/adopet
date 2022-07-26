@@ -29,8 +29,7 @@ export default function Cadastro() {
    const navigate = useNavigate();
 
    function onSubmit(data) {
-      api
-         .post('/users', {
+      api.post('/users', {
             email: data.email,
             nome: data.nome,
             senha: data.senha
@@ -39,8 +38,8 @@ export default function Cadastro() {
             alert("Usuário cadastrado com sucesso!");
             navigate('/login');
          })
-         .catch(() => {
-            navigate('/notfound');
+         .catch((error) => {
+            console.log(error);
          });
    }
 
