@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/adopet/static/css/main.030e2a2d.css",
-    "main.js": "/adopet/static/js/main.31b714c6.js",
+    "main.css": "/adopet/static/css/main.9fe8644e.css",
+    "main.js": "/adopet/static/js/main.307acc1e.js",
     "static/media/ilustracao1.png": "/adopet/static/media/ilustracao1.858792cc056bcba8dc4c.png",
     "static/media/Patas.png": "/adopet/static/media/Patas.10a6e47bcaf77bfb7a2e.png",
     "static/media/logo_azul.svg": "/adopet/static/media/logo_azul.4a935b26a6f8a4a7b05e49fb0d1127c9.svg",
     "static/media/Logo.svg": "/adopet/static/media/Logo.dab84cddbcb68f62b59845501b8ca609.svg",
     "static/media/logo_branca.svg": "/adopet/static/media/logo_branca.5888ba71c86199404a02b4e88f0973c8.svg",
     "static/media/mensagem_responsavel.svg": "/adopet/static/media/mensagem_responsavel.a71fd916fbc1491a583132e09c9303c9.svg",
-    "static/media/user.svg": "/adopet/static/media/user.6f88cbe8973e0cd4ffe85b13a89c1b02.svg",
+    "static/media/user.svg": "/adopet/static/media/user.6f88cbe8973e0cd4ffe8.svg",
     "index.html": "/adopet/index.html",
     "static/media/Mensagens.svg": "/adopet/static/media/Mensagens.5f7dd28207df71cb5402d68be6dc1b1c.svg",
     "static/media/vetor_lateral.svg": "/adopet/static/media/vetor_lateral.6e38640f256cc14dfbe0.svg",
     "static/media/vetor_topo.svg": "/adopet/static/media/vetor_topo.787cecd4b88310eac38d.svg",
     "static/media/linha_superior.svg": "/adopet/static/media/linha_superior.06922a74d4a80576c567.svg",
     "static/media/Casa.svg": "/adopet/static/media/Casa.ee2869b277070865e1bcf08741dae8fe.svg",
-    "main.030e2a2d.css.map": "/adopet/static/css/main.030e2a2d.css.map",
-    "main.31b714c6.js.map": "/adopet/static/js/main.31b714c6.js.map"
+    "main.9fe8644e.css.map": "/adopet/static/css/main.9fe8644e.css.map",
+    "main.307acc1e.js.map": "/adopet/static/js/main.307acc1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.030e2a2d.css",
-    "static/js/main.31b714c6.js"
+    "static/css/main.9fe8644e.css",
+    "static/js/main.307acc1e.js"
   ]
 }
