@@ -57,7 +57,7 @@ A API consiste na realização de um CRUD para os usuários e para realização 
 
 
 ## Modificações realizadas
-###Sistema de autenticação
+### Sistema de autenticação
 Não fora solicitado a implementação de um sistema de autenticação para acesso à página de usuários, somente uma página de login funcional. Optei por implementar o acesso à pagina de usuário somente quando o mesmo estivesse logado. Ao se logar todas as informações são trazidas do banco de dados e de forma personalizada, cada usuário acessa só e somente só a sua própria página de login:
 
 <p align="center">
