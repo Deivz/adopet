@@ -28,7 +28,7 @@ export default function AppRouter() {
 
    return (
       <main className='pagina'>
-         <Router basename='/adopet'>
+         <Router>
             <AuthContextProvider>
                <ImageUploadContextProvider>
                   <Routes>
