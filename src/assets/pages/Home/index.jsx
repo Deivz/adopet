@@ -20,6 +20,8 @@ export default function Home() {
             </div>
             <div className='home__cards'>
                 {Object.values(pets).map((pet) => {
+                    console.log(pet);
+                    console.log(pet.id);
                     return <Cards
                         key={pet.id}
                         imagem={pet.imagem}
@@ -29,6 +31,7 @@ export default function Home() {
                         perfil={pet.perfil}
                         cidade={pet.local}
                     />
+                    console.log(Object.values(pets));
                 })}
             </div>
         </section>
