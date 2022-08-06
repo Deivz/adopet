@@ -5,12 +5,14 @@ import { useEffect, useState } from 'react';
 
 export default function Home() {
     const [pets, setPets] = useState([]);
-    useEffect(() => {
-        api.get('/pets').then((response) => {
-            setPets(response.data);
-        })
-    }, []);
-
+    // useEffect(() => {
+    //     api.get('/pets').then((response) => {
+    //         setPets(response.data);
+    //     })
+    // }, []);
+    api.get('/pets').then((response) => {
+        setPets(response.data);
+    });
     return (
         <section className='secao__home'>
             <h2 className='home__titulo--mobile'>Olá! Veja os amigos disponíveis para adoção!</h2>
