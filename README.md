@@ -9,7 +9,7 @@ Repositório criado para o desafio de front end da Alura edição de número 4. 
 
 ## No que consiste o desafio
 
-O desafio se dá da seguinte forma: é passado alguns cards no Trello com as atividades bem como o layout no Figma. Cada card consiste em uma atividade que deve ser realizada a fim de que todo o backlog possa ser cumprido e o desenvolvedor consiga também se organizar. O layout da página pode ser visto no link abaixo:
+O desafio se dá da seguinte forma: são passados alguns cards no Trello com as atividades bem como o layout no Figma. Cada card consiste em uma atividade que deve ser realizada a fim de que todo o backlog possa ser cumprido e o desenvolvedor consiga também se organizar. O layout da página pode ser visto no link abaixo:
 
 https://www.figma.com/file/TlfkDoIu8uyjZNla1T8TpH/Challenge---Adopet
 
